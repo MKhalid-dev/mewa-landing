@@ -1,4 +1,3 @@
-import { TrendingUp, Coins } from "lucide-react";
 import Logo from "../public/Logo.svg";
 import { FaChartLine } from "react-icons/fa";
 import { GrMoney } from "react-icons/gr";
