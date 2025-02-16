@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap");
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --primary-color: #185F47;
+  --primary-hover: #185F47;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "arabic", sans-serif;
+  background: url("./../public//background.svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+.app {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  max-width: 300px;
+  /* height: auto; */
+  margin-bottom: -1rem;
+}
+
+.title {
+  color: #185F47;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #185F47;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 2rem;
+  min-width: 350px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.card span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+
+@font-face {
+  font-family: 'arabic';
+  src: url('/mewa-landing/public/alfont_com_SST-Arabic-Medium.ttf') format('woff2'),
+       url('/mewa-landing/public/alfont_com_SST-Arabic-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Large Screens (1200px+) */
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+  }
+
+  .card {
+    padding: var(--spacing-lg) calc(var(--spacing-lg) * 2);
+  }
+}
+
+/* Medium Screens (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+
+  .content {
+    padding: var(--spacing-md);
+  }
+}
+
+/* Small Screens (480px to 767px) */
+@media (max-width: 767px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .wave-background {
+    padding: var(--spacing-sm);
+  }
+
+  .content {
+    padding: var(--spacing-sm);
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+}
+
+/* Mobile Screens (<480px) */
+@media (max-width: 479px) {
+  :root {
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+  }
+
+  .cards {
+    gap: var(--spacing-md);
+  }
+
+  .card {
+    padding: var(--spacing-md);
+    min-height: 160px;
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+  .content {
+    gap: var(--spacing-md);
+  }
+}
+
