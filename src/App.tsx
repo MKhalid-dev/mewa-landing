@@ -23,7 +23,7 @@ function App() {
               <GrMoney className="card-icon" />
               <span>تخطيط الميزانية</span>
             </button>
-            <button className="card">
+            <button className="card stats">
               <FaChartLine className="card-icon" />
               <span>تخطيط المناقلات</span>
             </button>
