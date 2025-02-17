@@ -77,7 +77,7 @@ body {
   background-color: #185F47;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 16px;
   padding: 2rem;
   min-width: 350px;
   cursor: pointer;
@@ -88,11 +88,12 @@ body {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .stats {
-  background-color: #2d3532;
+  /* background-color: #2d3532; */
+  opacity: 0.3;
   cursor: not-allowed
 }
 
-.card:hover {
+.card:not(.stats):hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
