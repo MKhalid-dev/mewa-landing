@@ -19,14 +19,14 @@ function App() {
           <h1 className="title">مرحباً بك في نظام هايبريون للتخطيط المالي</h1>
 
           <div className="cards">
-            <button className="card">
+            <a href="/planning/" className="card">
               <GrMoney className="card-icon" />
               <span>تخطيط الميزانية</span>
-            </button>
-            <button className="card stats">
+            </a>
+            <a className="card stats">
               <FaChartLine className="card-icon" />
               <span>تخطيط المناقلات</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
