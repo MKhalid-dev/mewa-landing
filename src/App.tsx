@@ -1,4 +1,4 @@
-import Logo from "../public/Logo.svg";
+import Logo from "/Logo.svg";
 import { FaChartLine } from "react-icons/fa";
 import { GrMoney } from "react-icons/gr";
 

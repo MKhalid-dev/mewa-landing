@@ -16,7 +16,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "arabic", sans-serif;
-  background: url("./../public//background.svg");
+  background: url("/background.svg");
 }
 
 * {
@@ -127,8 +127,8 @@ body {
 
 @font-face {
   font-family: 'arabic';
-  src: url('/mewa-landing/public/alfont_com_SST-Arabic-Medium.ttf') format('woff2'),
-       url('/mewa-landing/public/alfont_com_SST-Arabic-Medium.ttf') format('truetype');
+  src: url('/alfont_com_SST-Arabic-Medium.ttf') format('woff2'),
+       url('/alfont_com_SST-Arabic-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
